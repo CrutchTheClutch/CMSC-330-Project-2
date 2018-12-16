@@ -1,4 +1,5 @@
 #include <iostream>
+#include <sstream>
 using namespace std;
 
 #include "expression.h"
@@ -35,27 +36,27 @@ SubExpression::SubExpression(Expression* left)
     this->left = left;
 }
 
-Expression* SubExpression::parse()
+Expression* SubExpression::parse(stringstream& in)
 {
     Expression* left;
     Expression* right;
     Expression* condition;
     char operation, paren, question;
     
-    left = Operand::parse();
-    cin >> operation;
+    left = Operand::parse(in);
+    in >> operation;
     if (operation == '!'){
-        cin >> paren;
+        in >> paren;
         return new Negate(left);
     } else if (operation == ':'){
-        right = Operand::parse();
-        cin >> question;
-        condition = Operand::parse();
-        cin >> paren;
+        right = Operand::parse(in);
+        in >> question;
+        condition = Operand::parse(in);
+        in >> paren;
         return new Conditional(left, right, condition);
     } else {
-        right = Operand::parse();
-        cin >> paren;
+        right = Operand::parse(in);
+        in >> paren;
     }
 
 
