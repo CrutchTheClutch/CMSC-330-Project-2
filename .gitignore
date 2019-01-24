@@ -1,8 +1,8 @@
 
-# Created by https://www.gitignore.io/api/java,macos,windows,intellij+all,microsoftoffice
-# Edit at https://www.gitignore.io/?templates=java,macos,windows,intellij+all,microsoftoffice
+# Created by https://www.gitignore.io/api/java,macos,windows,clion+all,microsoftoffice
+# Edit at https://www.gitignore.io/?templates=java,macos,windows,clion+all,microsoftoffice
 
-### Intellij+all ###
+### CLion+all ###
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio and WebStorm
 # Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
 
@@ -70,7 +70,7 @@ fabric.properties
 # Android studio 3.1+ serialized cache file
 .idea/caches/build_file_checksums.ser
 
-### Intellij+all Patch ###
+### CLion+all Patch ###
 # Ignores the whole .idea folder and all .iml files
 # See https://github.com/joeblau/gitignore.io/issues/186 and https://github.com/joeblau/gitignore.io/issues/360
 
@@ -182,4 +182,4 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# End of https://www.gitignore.io/api/java,macos,windows,intellij+all,microsoftoffice
+# End of https://www.gitignore.io/api/java,macos,windows,clion+all,microsoftoffice
